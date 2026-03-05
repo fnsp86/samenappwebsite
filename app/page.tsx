@@ -162,13 +162,12 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
-                <Link
-                  href="/download"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-nachtblauw px-7 py-4 text-base font-bold text-white transition-all hover:scale-[0.97] hover:shadow-xl"
+                <div
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-nachtblauw/70 px-7 py-4 text-base font-bold text-white cursor-default"
                 >
-                  <Smartphone className="h-5 w-5" />
-                  Download gratis
-                </Link>
+                  <Clock className="h-5 w-5" />
+                  Binnenkort beschikbaar
+                </div>
                 <a
                   href="#hoe-werkt-het"
                   className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-zand px-7 py-4 text-base font-semibold text-nachtblauw transition-colors hover:bg-zand-light"
@@ -179,14 +178,7 @@ export default function HomePage() {
 
               {/* Social proof */}
               <div className="flex flex-wrap items-center gap-5 text-sm text-leisteen">
-                <div className="flex items-center gap-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="h-4 w-4 text-goud fill-goud" />
-                  ))}
-                  <span className="ml-1.5 font-semibold text-nachtblauw">4.9</span>
-                </div>
-                <div className="h-4 w-px bg-zand" />
-                <span>Gratis te downloaden</span>
+                <span>Binnenkort gratis te downloaden</span>
                 <div className="h-4 w-px bg-zand" />
                 <span>iOS & Android</span>
               </div>
@@ -334,9 +326,9 @@ export default function HomePage() {
               <p className="text-base text-leisteen leading-relaxed mb-6 max-w-md">
                 In 2 minuten weten hoe het echt met jullie gaat. Scoor verbondenheid, communicatie en waardering - en volg jullie groei over tijd in de relatiepols grafiek.
               </p>
-              <Link href="/download" className="inline-flex items-center gap-1.5 text-sm font-bold text-salie transition-all hover:gap-3">
-                Probeer het zelf <ArrowRight className="h-4 w-4" />
-              </Link>
+              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-salie">
+                Binnenkort beschikbaar
+              </span>
             </div>
           </div>
         </div>
@@ -396,9 +388,9 @@ export default function HomePage() {
               <p className="text-base text-leisteen leading-relaxed mb-6 max-w-md">
                 Beantwoord stellingen over communicatie, vertrouwen en intimiteit. Vergelijk jullie scores en ontdek waar jullie sterk in zijn - en waar ruimte is om te groeien.
               </p>
-              <Link href="/download" className="inline-flex items-center gap-1.5 text-sm font-bold text-oceaan transition-all hover:gap-3">
-                Probeer het zelf <ArrowRight className="h-4 w-4" />
-              </Link>
+              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-oceaan">
+                Binnenkort beschikbaar
+              </span>
             </div>
           </div>
         </div>
@@ -467,9 +459,9 @@ export default function HomePage() {
               <p className="text-base text-leisteen leading-relaxed mb-6 max-w-md">
                 Speels en verrassend. Kies bij elke eigenschap wie het beste past: jij of je partner. Vergelijk daarna jullie antwoorden en lach om de verschillen.
               </p>
-              <Link href="/download" className="inline-flex items-center gap-1.5 text-sm font-bold text-goud transition-all hover:gap-3">
-                Probeer het zelf <ArrowRight className="h-4 w-4" />
-              </Link>
+              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-goud">
+                Binnenkort beschikbaar
+              </span>
             </div>
           </div>
         </div>
@@ -660,23 +652,15 @@ export default function HomePage() {
             Jullie relatie begint hier
           </h2>
           <p className="text-lg text-white/75 mb-8 max-w-md mx-auto">
-            Download Samen en ontdek hoe 5 minuten per dag het verschil maakt.
+            Samen komt binnenkort beschikbaar voor iPhone en Android. Houd deze pagina in de gaten.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              href="/download"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-8 py-4 text-base font-bold text-terracotta transition-all hover:scale-[0.97] shadow-lg"
+          <div className="flex justify-center">
+            <div
+              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/20 backdrop-blur border border-white/25 px-8 py-4 text-base font-bold text-white cursor-default"
             >
-              <Smartphone className="h-5 w-5" />
-              Download voor iPhone
-            </Link>
-            <Link
-              href="/download"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/15 backdrop-blur border border-white/25 px-8 py-4 text-base font-bold text-white transition-all hover:bg-white/25"
-            >
-              <Smartphone className="h-5 w-5" />
-              Download voor Android
-            </Link>
+              <Clock className="h-5 w-5" />
+              Binnenkort beschikbaar
+            </div>
           </div>
         </div>
       </section>

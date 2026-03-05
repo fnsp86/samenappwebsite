@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Smartphone, Heart, CheckCircle } from "lucide-react";
+import { Heart, CheckCircle, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Download",
-  description: "Download de Samen app voor iPhone of Android. Gratis beschikbaar.",
+  description: "De Samen app komt binnenkort beschikbaar voor iPhone en Android.",
 };
 
 export default function DownloadPage() {
@@ -15,41 +14,19 @@ export default function DownloadPage() {
           <Heart className="h-8 w-8 text-white" strokeWidth={2.5} />
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-nachtblauw mb-4">
-          Download Samen
+          Samen komt eraan
         </h1>
         <p className="text-base text-leisteen max-w-lg mx-auto">
-          Beschikbaar voor iPhone en Android. Gratis te downloaden, binnen een
-          minuut klaar om te gebruiken.
+          We werken hard om Samen klaar te maken voor iPhone en Android. Houd deze pagina in de gaten voor de lancering.
         </p>
       </div>
 
-      {/* Download buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
-        <a
-          href="#"
-          className="inline-flex items-center justify-center gap-3 rounded-2xl bg-nachtblauw px-8 py-4 text-white transition-transform hover:scale-[0.97]"
-        >
-          <svg viewBox="0 0 24 24" className="h-7 w-7 fill-current">
-            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-          </svg>
-          <div className="text-left">
-            <div className="text-xs opacity-80">Download op de</div>
-            <div className="text-base font-bold">App Store</div>
-          </div>
-        </a>
-
-        <a
-          href="#"
-          className="inline-flex items-center justify-center gap-3 rounded-2xl bg-nachtblauw px-8 py-4 text-white transition-transform hover:scale-[0.97]"
-        >
-          <svg viewBox="0 0 24 24" className="h-7 w-7 fill-current">
-            <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302L5.864 2.658z"/>
-          </svg>
-          <div className="text-left">
-            <div className="text-xs opacity-80">Beschikbaar op</div>
-            <div className="text-base font-bold">Google Play</div>
-          </div>
-        </a>
+      {/* Coming soon notice */}
+      <div className="flex justify-center mb-14">
+        <div className="inline-flex items-center justify-center gap-2 rounded-2xl bg-nachtblauw/10 px-8 py-4 text-base font-bold text-nachtblauw">
+          <Clock className="h-5 w-5" />
+          Binnenkort beschikbaar
+        </div>
       </div>
 
       {/* What you get */}
@@ -79,9 +56,7 @@ export default function DownloadPage() {
       {/* Device requirements */}
       <div className="mt-8 text-center">
         <p className="text-xs text-leisteen">
-          Vereist iOS 15+ of Android 10+. De app is gratis te downloaden.
-          <br />
-          Optioneel: Samen Premium voor toegang tot alle functies.
+          Vereist iOS 15+ of Android 10+. De app wordt gratis te downloaden.
         </p>
       </div>
     </div>
