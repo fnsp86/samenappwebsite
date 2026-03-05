@@ -18,6 +18,7 @@ import {
   Zap,
   HelpCircle,
   Brain,
+  BookOpen,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -611,6 +612,33 @@ export default function HomePage() {
             >
               Alle vragen <ArrowRight className="h-4 w-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ VADERCOACH CROSS-PROMO ═══ */}
+      <section className="border-t border-zand">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div className="rounded-2xl border border-[#F59E0B]/20 bg-[#F59E0B]/5 p-6 sm:p-10 flex flex-col sm:flex-row items-start gap-6 sm:gap-10">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#F59E0B]/10">
+              <BookOpen className="h-7 w-7 text-[#F59E0B]" />
+            </div>
+            <div className="flex-1">
+              <h2 className="text-xl sm:text-2xl font-extrabold text-nachtblauw mb-3">
+                Ook vader? Ontdek De Vadercoach
+              </h2>
+              <p className="text-base text-leisteen leading-relaxed mb-5">
+                Een sterke relatie en goed vaderschap gaan hand in hand. Met De Vadercoach werk je aan je opvoedvaardigheden met wetenschappelijk onderbouwde cursussen en dagelijkse oefeningen.
+              </p>
+              <a
+                href="https://devadercoach.nl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl bg-[#F59E0B] px-6 py-3 text-sm font-bold text-nachtblauw transition-all hover:scale-[0.97]"
+              >
+                Bekijk De Vadercoach <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
